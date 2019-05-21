@@ -1,11 +1,11 @@
-org=`./pcf-current-org`
+org=`./current-org`
 echo "Starting all apps in org: $org"
-spaces=`./pcf-list-spaces`
+spaces=`./list-spaces`
 for space in $spaces
 do
   echo "  Starting all apps in space: $space"
-  ./pcf-switch-space $space
-  ./pcf-start-all-current-space
+  ./switch-space $space
+  ./start-all-current-space
   echo "    Done"
 done
 echo "Done"

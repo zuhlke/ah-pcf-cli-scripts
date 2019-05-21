@@ -1,11 +1,11 @@
-org=`./pcf-current-org`
+org=`./current-org`
 echo "Stopping all apps in org: $org"
-spaces=`./pcf-list-spaces`
+spaces=`./list-spaces`
 for space in $spaces
 do
   echo "  Stopping all apps in space: $space"
-  ./pcf-switch-space $space
-  ./pcf-stop-all-current-space
+  ./switch-space $space
+  ./stop-all-current-space
   echo "    Done"
 done
 echo "Done"
