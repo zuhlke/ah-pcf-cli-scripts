@@ -3,6 +3,11 @@
 Contains scripts for ah developers, so that they can perform common operations against the ah pcf org
 easily by calling these scripts.
 
+## Note
+
+I have this directory named `pcf/` locally, so that from the top level where I have clones of all these ah 
+projects, when calling scripts, I invoke them like this: `./pcf/stop-all-current-space`.
+
 ## Usage
 
 In order to use most of these scripts, you need to log in.
