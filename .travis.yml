@@ -4,4 +4,4 @@ script:
   - export PATH="$PATH:."
   - cf --version
   - cf login -a $PCF_API -u $PCF_USERNAME -p $PCF_PASSWORD -o aimless-hammer -s development
-  - bash ./start-all-current-org
+  - bash ./stop-all-current-org
