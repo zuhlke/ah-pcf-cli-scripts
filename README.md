@@ -45,4 +45,4 @@ webhooks:
 - another which occurs on every weekday at 1830
 
 These both cause the travis pipeline of this repository to run fully, either starting or stopping all the apps in the PCF
-org.
+org, depending on the time of day.
