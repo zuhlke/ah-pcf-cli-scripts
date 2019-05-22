@@ -1,0 +1,6 @@
+spaces=`./list-spaces`
+for space in $spaces
+do
+  ./switch-space $space > /dev/null
+  ./list-stopped-apps-current-space | xargs -n1 echo $space
+done
