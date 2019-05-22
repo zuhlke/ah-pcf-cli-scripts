@@ -1,1 +1,1 @@
-cf spaces | tail -3
+cf spaces | tail -n +4
