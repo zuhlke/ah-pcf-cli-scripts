@@ -1,0 +1,14 @@
+# result=0 => afternoon
+# result=1 => morning
+
+## NOTE: reversed for test
+(( `date +"%H"` > 12 ))
+result=$?
+
+if [[ result ]]
+then
+  ./stop-all-current-org
+else
+  ./start-all-current-org
+fi
+
