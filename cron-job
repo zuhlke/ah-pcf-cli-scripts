@@ -1,17 +1,7 @@
-echo "Running cron-job"
-exit 0
-
-# result=0 => afternoon
-# result=1 => morning
-
-## NOTE: reversed for test
-(( `date +"%H"` > 12 ))
-result=$?
-
-if [[ result ]]
+if [[ (( `date +"%H"` < 12 )) ]]
 then
-  ./stop-all-current-org
-else
   ./start-all-current-org
+else
+  ./stop-all-current-org
 fi
 
