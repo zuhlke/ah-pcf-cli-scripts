@@ -4,4 +4,3 @@ then
 else
   ./stop-all-current-org
 fi
-
