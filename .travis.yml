@@ -1,2 +1,2 @@
 script:
-  - bash ./pipeline-script
+  - bash ./pipeline-script.sh
