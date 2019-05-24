@@ -1,9 +1,4 @@
-if [[ "$CRON_JOB" != "true" ]]
-then
-    echo "Pipeline not invoked with CRON_JOB=true"
-    exit 0
-fi
-
+if [[ ${CRON_JOB} != "true" ]]; then echo "Pipeline not invoked with CRON_JOB=true" && exit 0; fi
 echo "Installing cf cli"
 test x$TRAVIS_OS_NAME = "xlinux" && rel="linux64-binary" || rel="macosx64"; wget "https://cli.run.pivotal.io/stable?release=${rel}&source=github" -qO cf.tgz && tar -zxvf cf.tgz && rm cf.tgz
 export PATH="$PATH:."
