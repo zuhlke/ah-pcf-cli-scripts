@@ -1,4 +1,5 @@
-if [[ (( `date +"%H"` < 12 )) ]]
+# Flipped (it is now incorrect) for test
+if [[ (( `date +"%H"` > 12 )) ]]
 then
   ./start-all-current-org
 else
