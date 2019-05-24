@@ -1,1 +1,1 @@
-cf a | grep stopped | cut -d' ' -f1 | xargs -n1 cf start
+cf a | grep -v started | tail -n +5 | cut -d' ' -f1 | xargs -n1 cf start
